@@ -56,4 +56,4 @@ practice-rxpy-jPR28GGN-py3.11 ❯ python src/index.py
 [ThreadPoolExecutor-0_8] total count is 891
 ```
 
-## 3.2.2. 代码分析
+using 12 threads, each thread processes a chunk over 3 seconds.
