@@ -2,6 +2,7 @@ import csv
 import multiprocessing
 import time
 from threading import current_thread
+from datetime import datetime
 
 import rx
 from rx import operators as ops
@@ -9,7 +10,8 @@ from rx.scheduler.threadpoolscheduler import ThreadPoolScheduler
 
 
 def print_t(it):
-    print(f'[{current_thread().name}] {it}')
+    ts = datetime.now().strftime('%H:%M:%S')
+    print(f'[{ts}][{current_thread().name}] {it}')
 
 
 # thread pool
