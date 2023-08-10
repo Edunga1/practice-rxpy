@@ -43,11 +43,11 @@ def apply_delay(x):
     return x
 
 
-def print_passnger_sex(items):
+def print_passengers(items):
     min_id = items[0]['id']
     max_id = items[-1]['id']
     genders = [x['sex'][0].upper() for x in items]
-    print_t(f'passnger id {min_id} ~ {max_id} - {"".join(genders)}')
+    print_t(f'passenger id {min_id} ~ {max_id} - {"".join(genders)}')
 
 
 def main():
@@ -64,7 +64,7 @@ def main():
         )),
 
         # some operation to process data
-        ops.do_action(on_next=print_passnger_sex),
+        ops.do_action(on_next=print_passengers),
 
         # sum
         ops.map(lambda x: len(x)),
