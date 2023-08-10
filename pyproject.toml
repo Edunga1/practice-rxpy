@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "practice-rxpy"
+version = "0.1.0"
 description = ""
+authors = []
 
 [tool.poetry.dependencies]
-python = "3.10"
+python = "^3.10"
+rx = "^3.2.0"
 
 
 [build-system]
